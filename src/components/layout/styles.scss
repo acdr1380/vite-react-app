@@ -1,0 +1,13 @@
+$height: 64px;
+
+.logo {
+    height: $height;
+    line-height: $height;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.menu {
+    height: calc(100% - $height);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
