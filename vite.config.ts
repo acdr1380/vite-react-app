@@ -22,6 +22,12 @@ export default defineConfig({
 
     server: {
         port: 7001,
+        proxy: {
+            '/api': {
+                target: 'http://localhost:7070',
+                changeOrigin: true,
+            },
+        },
     },
 
     build: {

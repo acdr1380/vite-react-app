@@ -28,12 +28,12 @@ export default () => {
 
     return (
         <Layout>
-            <Sider breakpoint="lg" collapsedWidth={0} width={300}>
-                <div className="logo" />
-                <Menu className="menu" mode="inline" items={menuItems} />
-            </Sider>
+            <Header>header</Header>
+
             <Layout>
-                <Header>header</Header>
+                <Sider breakpoint="lg" collapsible={true} width={300}>
+                    <Menu className="menu" mode="inline" items={menuItems} />
+                </Sider>
                 <Layout>
                     <Breadcrumb>
                         <Breadcrumb.Item>Home</Breadcrumb.Item>
